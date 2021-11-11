@@ -175,17 +175,17 @@ bcaRawResultsLines = [str(bcaResults["bodyCompositionAnalyzerModel"]),
                       'Predicted Muscle Mass '+str(bcaResults["segAnaPMMtrunk"])]
 saveBcaResultsToTxtFile('ascWyniki.txt', bcaRawResultsLines)
 # saving needed values to csv file
-header = ['sprawdzonaData',
-          'masaCiala',
-          '%tluszczu',
-          'masaTluszczu',
-          'wskaznikTkankiTrzewnej',
+header = ['data',
+          'masa ciała',
+          'tłuszcz w %',
+          'masa tłuszczu',
+          'wskaźnik tkanki trzewnej',
           'FFM', 'TBW',
-          'prawaNoga%Tluszcz', 'prawaNogaMasaTluszcz', 'prawaNogaPrzewMmiesni',
-          'lewaNoga%Tluszcz', 'lewaNogaMasaTluszcz', 'lewaNogaPrzewMmiesni',
-          'praweRamie%Tluszcz', 'praweRamieMasaTluszcz', 'praweRamiePrzewMmiesni',
-          'leweRamie%Tluszcz', 'leweRamieMasaTluszcz', 'leweRamiePrzewMmiesni',
-          'tlow%Tluszcz', 'tlowMasaTluszcz', 'tlowPrzewMmiesni']
+          'tłuszcz w % prawa noga', 'masa tłuszczu prawa noga', 'przewidywana masa mięśni prawa noga',
+          'tłuszcz w % lewa noga', 'masa tłuszczu lewa noga', 'przewidywana masa mięśni lewa noga',
+          'tłuszcz w % prawe ramię', 'masa tłuszczu prawe ramię', 'przewidywana masa mięśni prawe ramię',
+          'tłuszcz w % lewe ramię', 'masa tłuszczu lewe ramię', 'przewidywana masa mięśni lewe ramię',
+          'tłuszcz w % tłów', 'masa tłuszczu tłów', 'przewidywana masa mięśni tłów']
 data = [str(bcaResults["actualData"]), str(bcaResults["personWeight"]), str(bcaResults["bodyFatPercent"]),
         str(bcaResults["bodyFatMass"]), str(bcaResults["bodyVisceralFatRating"]), str(bcaResults["bodyFFM"]),
         str(bcaResults["bodyTBW"]), str(bcaResults["segAnaFatPercentRightLeg"]),
