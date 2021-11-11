@@ -1,4 +1,5 @@
 # This software helps transform information from Tanita BC-418 bca printout to digital files.
+# 11 listopada 2021, werjsa 1
 
 import csv
 
